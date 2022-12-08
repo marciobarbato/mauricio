@@ -1,0 +1,4 @@
+$templateFile="deployment.json"
+$parametersFile="deployment.parameters.json"
+$resourceGroup="mb-test"
+az deployment group create --name myFirstDeploy --resource-group $resourceGroup --template-file $templateFile --parameters $parametersFile
